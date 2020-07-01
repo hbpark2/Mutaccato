@@ -73,10 +73,12 @@
     cursor: pointer;
     transition: all .5s;
 }
-.slide_btn_box>button:hover{
+
+.slide_btn_box>button:hover {
     background-color: #ddd;
     color: #fff;
 }
+
 .slide_btn_box>button:focus {
     border-color: #0b547a;
 }
@@ -153,7 +155,18 @@
     .slide_content {
         width: 1280px;
     }
+
     .slide_wrap {
         width: 80%;
+    }
 }
 
+@media screen and (max-width:1280px) {
+    .slide_content {
+        width: 500px;
+    }
+
+    .slide_wrap {
+        width: 80%;
+    }
+}
