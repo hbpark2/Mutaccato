@@ -147,23 +147,37 @@ const targetDetailEventdesign = document.querySelector('.depth_eventdesign > ul'
 
 // console.log(detailDepth, detailLookbook, detailEventdesign)
 //헤더 크기, opacity
-headerBox.addEventListener('mouseover', () => headerBox.style.height = 400 + 'px')
-headerBox.addEventListener('mouseout', () => headerBox.style.height = 130 + 'px')
-headerBox.addEventListener('mouseover', () => headerBox.style.opacity = 1)
-headerBox.addEventListener('mouseout', () => headerBox.style.opacity = 0.9)
+// headerBox.addEventListener('mouseover', () => headerBox.style.height = 400 + 'px')
+// headerBox.addEventListener('mouseout', () => headerBox.style.height = 130 + 'px')
+// headerBox.addEventListener('mouseover', () => headerBox.style.opacity = 1)
+// headerBox.addEventListener('mouseout', () => headerBox.style.opacity = 0.9)
+
+
 //상세페이지
 trigerDetailDepth.addEventListener('mouseover', () => {
   targetDetailDepth.style.display = 'block';
   targetDetailDepth.style.opacity = 1;
+  headerBox.style.height = 400 + 'px';
+  headerBox.style.opacity = 1;
 })
-trigerDetailDepth.addEventListener('mouseout', () => targetDetailDepth.style.display = 'none')
+trigerDetailDepth.addEventListener('mouseout', () => {
+  targetDetailDepth.style.display = 'none';
+  headerBox.style.height = 130 + 'px';
+  headerBox.style.opacity = 0.9;
+})
 
 //룩북
 trigerDetailLookbook.addEventListener('mouseover', () => {
   targetDetailLookbook.style.display = 'block';
   targetDetailLookbook.style.opacity = 1;
+  headerBox.style.height = 400 + 'px';
+  headerBox.style.opacity = 1;
 })
-trigerDetailLookbook.addEventListener('mouseout', () => targetDetailLookbook.style.display = 'none')
+trigerDetailLookbook.addEventListener('mouseout', () => {
+  targetDetailLookbook.style.display = 'none';
+  headerBox.style.height = 130 + 'px';
+  headerBox.style.opacity = 0.9;
+})
 
 
 
@@ -171,8 +185,14 @@ trigerDetailLookbook.addEventListener('mouseout', () => targetDetailLookbook.sty
 trigerDetailEventdesign.addEventListener('mouseover', () => {
   targetDetailEventdesign.style.display = 'block';
   targetDetailEventdesign.style.opacity = 1;
+  headerBox.style.height = 400 + 'px';
+  headerBox.style.opacity = 1;
 })
-trigerDetailEventdesign.addEventListener('mouseout', () => targetDetailEventdesign.style.display = 'none')
+trigerDetailEventdesign.addEventListener('mouseout', () => {
+  targetDetailEventdesign.style.display = 'none';
+  headerBox.style.height = 130 + 'px';
+  headerBox.style.opacity = 0.9;
+})
 
 
 

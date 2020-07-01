@@ -128,8 +128,8 @@ h1 img {
 .depth_detail_box {
     position: absolute;
     display: none;
-    width: 80%;
-    padding: 0 10%;
+    width: 96%;
+    padding: 0 2%;
     left: 0;
     text-indent: 20px;
     transition: all .5s;
@@ -177,8 +177,8 @@ h1 img {
 .depth_lookbook_box {
     position: absolute;
     display: none;
-    width: 80%;
-    padding: 0 10%;
+    width: 96%;
+    padding: 0 2%;
     left: 0;
     text-indent: 20px;
     transition: all .5s;
@@ -190,7 +190,7 @@ h1 img {
 }
 
 .depth_lookbook_box .tit {
-    width: 20%;
+    width: 14%;
     height: 60px;
     line-height: 60px;
     font-size: 32px;
@@ -200,7 +200,7 @@ h1 img {
 }
 
 .depth_lookbook_box .menu_detail {
-    width: 15%;
+    width: 12%;
     padding: 3% 0;
 }
 
@@ -216,12 +216,12 @@ h1 img {
 .depth_lookbook_box .menu_detail a {
     display: block;
     text-align: left;
-    height: 30px;
-    line-height: 30px;
+    height: 40px;
+    line-height: 40px;
 }
 
 .depth_lookbook_box .menu_img {
-    width: 35%;
+    width: 50%;
 }
 
 .depth_lookbook_box .menu_img img {
