@@ -1,0 +1,257 @@
+/*  Reset CSS  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    outline: 0;
+    text-decoration: none;
+    color: #555;
+}
+
+img {
+    border: 0;
+}
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.font_box {
+    text-align: center;
+    padding: 3px;
+    border: 3px solid #0b547a;
+    font-weight: 600;
+    transition: all .5s;
+}
+
+.font_box:hover {
+    background-color: #0b547a;
+    color: #fff;
+}
+
+.hidden {
+    display: block;
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    color: #fff;
+}
+
+#content {
+    margin: 0 5%;
+    width: auto;
+}
+
+section {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* 헤더영역 */
+header {
+    position: fixed;
+    z-index: 10;
+    width: 90%;
+    margin: 0 5%;
+    height: 130px;
+    background-color: rgba(255, 255, 255, 1);
+    transition: all .5s;
+    overflow: hidden;
+}
+
+header:hover {
+    border-bottom: 1px solid #ddd;
+
+}
+
+header h1 {
+    float: left;
+    width: 15%;
+}
+
+h1 a {
+    display: block;
+    text-align: center;
+}
+
+h1 img {
+    width: 130px;
+    margin: 0 auto;
+}
+
+#gnb {
+    width: 85%;
+    overflow: hidden;
+}
+
+.depth_1 {
+    float: left;
+    width: 180px;
+    line-height: 130px;
+}
+
+.depth_1 a {
+    display: block;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+
+.depth_1 a:hover {
+    color: #0b547a;
+}
+
+.depth_1>a {
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+}
+
+.depth_1>a:hover {
+    border-bottom: 2px solid #4a99c3;
+    box-sizing: border-box;
+}
+
+/*2depth Menu*/
+
+.depth_detail_box {
+    position: absolute;
+    display: none;
+    width: 80%;
+    padding: 0 10%;
+    left: 0;
+    text-indent: 20px;
+    transition: all .5s;
+    overflow: hidden;
+}
+
+.depth_detail_box>li {
+    float: left;
+}
+
+.depth_detail_box .tit {
+    width: 25%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 600;
+    padding: 3% 0;
+}
+
+.depth_detail_box .menu_detail {
+    width: 25%;
+    padding: 3% 0;
+}
+
+.depth_detail_box .menu_detail a {
+    text-align: left;
+}
+
+.depth_detail_box .menu_img {
+    width: 50%;
+}
+
+.depth_detail_box .menu_img img {
+    display: block;
+    width: 100%;
+}
+
+.depth_2_box>li {
+    height: 60px;
+    line-height: 60px;
+}
+
+/*look book menu part */
+.depth_lookbook_box {
+    position: absolute;
+    display: none;
+    width: 80%;
+    padding: 0 10%;
+    left: 0;
+    text-indent: 20px;
+    transition: all .5s;
+    overflow: hidden;
+}
+
+.depth_lookbook_box>li {
+    float: left;
+}
+
+.depth_lookbook_box .tit {
+    width: 20%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 600;
+    padding: 3% 0;
+}
+
+.depth_lookbook_box .menu_detail {
+    width: 15%;
+    padding: 3% 0;
+}
+
+.depth_lookbook_box .menu_detail .sub_tit {
+    display: block;
+    height: 20px;
+    margin: 0;
+    padding: 3% 0 5%;
+    line-height: 20px;
+    text-align: center;
+}
+
+.depth_lookbook_box .menu_detail a {
+    display: block;
+    text-align: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+.depth_lookbook_box .menu_img {
+    width: 35%;
+}
+
+.depth_lookbook_box .menu_img img {
+    display: block;
+    width: 100%;
+}
+
+
+
+
+
+footer {
+    width: auto;
+    padding: 90px;
+    background: #f1f1f1;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.copyright_txt {
+    font-weight: 600;
+    line-height: 2em;
+}
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+    #gnb .depth_1 {
+        width: 14%;
+        line-height: 130px;
+    }
+}
