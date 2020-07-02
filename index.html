@@ -8,8 +8,14 @@
   <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="common.css" />
   <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/jquery-migrate-1.4.1.min.js"></script>
+  <script src="js/slick.js"></script>
   <script defer src="main.js"></script>
   <script src="https://kit.fontawesome.com/e39232b629.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -107,7 +113,7 @@
                 </ul>
               </li>
               <li class="menu_img">
-                <img src="img/banner/KakaoTalk_20200701_002324190.jpg" alt="">
+                <img src="img/banner/menu_album.jpg" alt="">
               </li>
           </li>
         </ul>
@@ -124,46 +130,43 @@
     </header>
 
     <article id="content">
-      <section class="visual_section">
-        <div id="container">
-          <div class="slide_wrap">
-            <div class="slide_box">
-              <div class="slide_list clearfix">
-                <div class="slide_content slide01">
-                  <img src="img/2.lookbook/3_2019sslookbook/legacybone/catalog_4.jpg" alt="비쥬얼이미지" />
-                </div>
-                <div class="slide_content slide02">
-                  <img src="img/2.lookbook/3_2019sslookbook/legacybone/catalog_5.jpg" alt="비쥬얼이미지" />
-                </div>
-                <div class="slide_content slide03">
-                  <img src="img/2.lookbook/3_2019sslookbook/legacybone/catalog_6.jpg" alt="비쥬얼이미지" />
-                </div>
-                <div class="slide_content slide04">
-                  <img src="img/2.lookbook/3_2019sslookbook/legacybone/catalog_7.jpg" alt="비쥬얼이미지" />
-                </div>
-                <div class="slide_content slide05">
-                  <img src="img/2.lookbook/3_2019sslookbook/legacybone/catalog_8.jpg" alt="비쥬얼이미지" />
-                </div>
-              </div>
-              <!-- // .slide_list -->
-            </div>
-            <!-- // .slide_box -->
-            <div class="slide_btn_box">
-              <button type="button" class="slide_btn_prev">
-                <span class="hidden">prev button</span><i class="fas fa-chevron-left"></i>
-              </button>
-              <button type="button" class="slide_btn_next">
-                <span class="hidden">next button</span><i class="fas fa-chevron-right"></i>
-              </button>
-            </div>
-            <!-- // .slide_btn_box -->
-            <ul class="slide_pagination"></ul>
-            <!-- // .slide_pagination -->
-          </div>
-          <!-- // .slide_wrap -->
+      <section class="visual_section lazy">
+
+        <div>
+          <img src="img/banner/1.jpg" alt="">
         </div>
-        <!-- // .container -->
+        <div>
+          <img src="img/banner/2.jpg" alt="">
+        </div>
+        <div>
+          <img src="img/banner/3.jpg" alt="">
+        </div>
+        <div>
+          <img src="img/banner/4.jpg" alt="">
+        </div>
+
+
       </section>
+
+
+
+      <script>
+        $(document).ready(function () {
+          $(".lazy").slick({
+            lazyLoad: 'ondemand', // ondemand progressive anticipated
+            infinite: true,
+            dots: true, //페이지버튼
+            autoplay: true, //자동실행
+            pauseOnHover: false, //마우스올렸을때 멈춤기능
+            autoplaySpeed: 3000, //슬라이드간격(시간)
+            speed: 300, //애니메이션 속도
+            swipe: true, //pc에서는 마우스 드래그이동, 모바일은 손으로 쓸어넘기는 기능
+            slide: 'div', //슬라이드로 사용할 엘리먼트 지정
+            arrows: false
+          });
+        });
+      </script>
+
       <section class="main_txt">
         <span class="font_box"> Vision </span>
         <span class="sub_tit">More than your expected, always makes best effect</span>

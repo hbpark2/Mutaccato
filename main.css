@@ -1,128 +1,35 @@
-/*slider*/
-
-#container {
-    width: 100%;
-    margin: auto;
-}
-
-.slide_wrap {
-    position: relative;
+.slider {
     width: 80%;
-    margin: auto;
-    padding-bottom: 30px;
+    margin: 100px auto;
 }
 
-.slide_list {
-    overflow: hidden;
+.slick-slide {
+    margin: 0px 20px;
 }
 
-.slide_box {
-    width: 100%;
-    margin: auto;
-    overflow-x: hidden;
-}
-
-.slide_content {
-    display: block;
-    float: left;
-    width: calc(100% / 7);
-    text-align: center;
-    overflow: hidden;
-}
-
-.slide_content>p {
-    display: block;
-    vertical-align: middle;
-    text-align: center;
-    font-size: 100px;
-    font-weight: bold;
-    color: #555;
-}
-
-.slide_content img {
+.slick-slide img {
     width: 100%;
 }
 
-/* .slide_content.slide01 {
-    background: #ddbdff;
+.slick-prev:before,
+.slick-next:before {
+    color: black;
 }
 
-.slide_content.slide02 {
-    background: #9fd6c2;
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
 }
 
-.slide_content.slide03 {
-    background: #abe2f7;
+.slick-active {
+    opacity: .5;
 }
 
-.slide_content.slide04 {
-    background: #f08c78;
+.slick-current {
+    opacity: 1;
 }
 
-.slide_content.slide05 {
-    background: #fbdb65;
-} */
-
-.slide_btn_box>button {
-    position: absolute;
-    top: 50%;
-    margin-top: -45px;
-    width: 60px;
-    height: 60px;
-    font-size: 16px;
-    color: #999;
-    background: none;
-    border: 1px solid #ddd;
-    cursor: pointer;
-    transition: all 0.5s;
-}
-
-.slide_btn_box>button:hover {
-    background-color: #ddd;
-    color: #fff;
-}
-
-.slide_btn_box>button:focus {
-    border-color: #0b547a;
-}
-
-.slide_btn_box>.slide_btn_prev {
-    left: -100px;
-}
-
-.slide_btn_box>.slide_btn_next {
-    right: -100px;
-}
-
-.slide_pagination {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    margin: 0;
-    padding: 0;
-    transform: translateX(-50%);
-}
-
-.slide_pagination .dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 0 15px;
-    overflow: hidden;
-    background: #ddd;
-    border-radius: 50%;
-    transition: 0.3s;
-}
-
-.slide_pagination .dot.dot_active {
-    background: #333;
-}
-
-.slide_pagination .dot a {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
 
 /*main_txt*/
 .main_txt {
@@ -147,24 +54,3 @@
     margin: 50px 0 0;
     font-weight: 600;
 }
-
-/* 일반 pc */
-/* @media screen and (max-width: 1280px) {
-    .slide_content {
-        width: 1200px;
-    }
-
-    .slide_wrap {
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .slide_content {
-        width: 500px;
-    }
-
-    .slide_wrap {
-        width: 80%;
-    }
-} */
