@@ -71,7 +71,7 @@
     background: none;
     border: 1px solid #ddd;
     cursor: pointer;
-    transition: all .5s;
+    transition: all 0.5s;
 }
 
 .slide_btn_box>button:hover {
@@ -136,6 +136,7 @@
 .main_txt .font_box {
     width: 200px;
     padding: 20px;
+    border: 1px solid #0b547a;
 }
 
 .sub_tit {
@@ -144,16 +145,10 @@
     font-weight: 600;
 }
 
-
-
-
-
-
-
 /* 일반 pc */
-@media screen and (max-width:1280px) {
+@media screen and (max-width: 1280px) {
     .slide_content {
-        width: 1280px;
+        width: 1200px;
     }
 
     .slide_wrap {
@@ -161,7 +156,7 @@
     }
 }
 
-@media screen and (max-width:1280px) {
+@media screen and (max-width: 768px) {
     .slide_content {
         width: 500px;
     }

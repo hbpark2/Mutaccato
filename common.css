@@ -220,6 +220,10 @@ h1 img {
     line-height: 40px;
 }
 
+.depth_box3 li a {
+    fonst-size: 14px;
+}
+
 .depth_lookbook_box .menu_img {
     width: 50%;
 }

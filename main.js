@@ -8,7 +8,10 @@
   const slideWidth = 1600; // slide width
   const slideSpeed = 300; // slide speed
   const startNum = 0; // initial slide index (0 ~ 4)
-
+  if (Document.screenwidth <= 1280) {
+    slideWidth = 1200
+  }
+  console.log(`screenWidth : ${screen.width}`)
   slideList.style.width = slideWidth * (slideLen + 2) + "px";
 
   // Copy first and last slide
