@@ -1,4 +1,3 @@
-/**second nav */
 const headerBox = document.querySelector("header");
 const trigerDetailDepth = document.querySelector(".depth_detail");
 const trigerDetailLookbook = document.querySelector(".depth_lookbook");
@@ -13,88 +12,164 @@ const targetDetailEventdesign = document.querySelector(
 const article = document.getElementById("content")
 let menuDetail = document.querySelectorAll(".menu_detail")
 
-headerBox.addEventListener("mouseover", () => {
-    article.style.filter = 'grayscale(95%)';
-})
-headerBox.addEventListener("mouseout", () => {
-    article.style.filter = 'none';
-})
+const menuBtn = document.querySelector('.menu_btn')
+const gnb = document.getElementById('gnb')
 
-//상세페이지
-trigerDetailDepth.addEventListener("mouseover", () => {
-    targetDetailDepth.style.display = "block";
-    targetDetailDepth.style.opacity = 1;
-    headerBox.style.height = 400 + "px";
-    headerBox.style.opacity = 1;
-});
-
-targetDetailDepth.addEventListener("mouseover", () => {
-    targetDetailDepth.previousElementSibling.style.borderBottom = '2px solid #4a99c3';
-    targetDetailDepth.previousElementSibling.style.color = '#0b547a';
-});
-
-targetDetailDepth.addEventListener("mouseout", () => {
-    targetDetailDepth.previousElementSibling.style.borderBottom = '';
-    targetDetailDepth.previousElementSibling.style.color = '#333';
-});
+if (window.innerWidth > 1024) {
+    /**second nav */
 
 
-trigerDetailDepth.addEventListener("mouseout", () => {
-    targetDetailDepth.style.display = "none";
-    headerBox.style.height = 130 + "px";
-    headerBox.style.opacity = 0.9;
-});
-
-//룩북
-trigerDetailLookbook.addEventListener("mouseover", () => {
-    targetDetailLookbook.style.display = "block";
-    targetDetailLookbook.style.opacity = 1;
-    headerBox.style.height = 400 + "px";
-    headerBox.style.opacity = 1;
-});
-trigerDetailLookbook.addEventListener("mouseout", () => {
-    targetDetailLookbook.style.display = "none";
-    headerBox.style.height = 130 + "px";
-    headerBox.style.opacity = 0.9;
-});
-
-targetDetailLookbook.addEventListener("mouseover", () => {
-    targetDetailLookbook.previousElementSibling.style.borderBottom = '2px solid #4a99c3';
-    targetDetailLookbook.previousElementSibling.style.color = '#0b547a';
-
-});
-
-targetDetailLookbook.addEventListener("mouseout", () => {
-    targetDetailLookbook.previousElementSibling.style.borderBottom = '';
-    targetDetailLookbook.previousElementSibling.style.color = '#333';
-
-});
+    headerBox.addEventListener("mouseover", () => {
+        article.style.filter = 'grayscale(95%)';
+    })
+    headerBox.addEventListener("mouseout", () => {
+        article.style.filter = 'none';
+    })
 
 
-//이벤트디자인
-trigerDetailEventdesign.addEventListener("mouseover", () => {
-    targetDetailEventdesign.style.display = "block";
-    targetDetailEventdesign.style.opacity = 1;
-    headerBox.style.height = 400 + "px";
-    headerBox.style.opacity = 1;
-});
-trigerDetailEventdesign.addEventListener("mouseout", () => {
-    targetDetailEventdesign.style.display = "none";
-    headerBox.style.height = 130 + "px";
-    headerBox.style.opacity = 0.9;
-});
+    //상세페이지
+    trigerDetailDepth.addEventListener("mouseover", () => {
+        targetDetailDepth.style.display = "block";
+        targetDetailDepth.style.opacity = 1;
+        headerBox.style.height = 400 + "px";
+        headerBox.style.opacity = 1;
+    });
 
-targetDetailEventdesign.addEventListener("mouseover", () => {
-    targetDetailEventdesign.previousElementSibling.style.borderBottom = '2px solid #4a99c3';
-    targetDetailEventdesign.previousElementSibling.style.color = '#0b547a';
+    targetDetailDepth.addEventListener("mouseover", () => {
+        targetDetailDepth.previousElementSibling.style.borderBottom = '2px solid #4a99c3';
+        targetDetailDepth.previousElementSibling.style.color = '#0b547a';
+    });
 
-});
+    targetDetailDepth.addEventListener("mouseout", () => {
+        targetDetailDepth.previousElementSibling.style.borderBottom = '';
+        targetDetailDepth.previousElementSibling.style.color = '#333';
+    });
 
-targetDetailEventdesign.addEventListener("mouseout", () => {
-    targetDetailEventdesign.previousElementSibling.style.borderBottom = '';
-    targetDetailEventdesign.previousElementSibling.style.color = '#333';
 
-});
+    trigerDetailDepth.addEventListener("mouseout", () => {
+        targetDetailDepth.style.display = "none";
+        headerBox.style.height = 130 + "px";
+        headerBox.style.opacity = 0.9;
+    });
+
+    //룩북
+    trigerDetailLookbook.addEventListener("mouseover", () => {
+        targetDetailLookbook.style.display = "block";
+        targetDetailLookbook.style.opacity = 1;
+        headerBox.style.height = 400 + "px";
+        headerBox.style.opacity = 1;
+    });
+    trigerDetailLookbook.addEventListener("mouseout", () => {
+        targetDetailLookbook.style.display = "none";
+        headerBox.style.height = 130 + "px";
+        headerBox.style.opacity = 0.9;
+    });
+
+    targetDetailLookbook.addEventListener("mouseover", () => {
+        targetDetailLookbook.previousElementSibling.style.borderBottom = '2px solid #4a99c3';
+        targetDetailLookbook.previousElementSibling.style.color = '#0b547a';
+
+    });
+
+    targetDetailLookbook.addEventListener("mouseout", () => {
+        targetDetailLookbook.previousElementSibling.style.borderBottom = '';
+        targetDetailLookbook.previousElementSibling.style.color = '#333';
+
+    });
+
+
+    //이벤트디자인
+    trigerDetailEventdesign.addEventListener("mouseover", () => {
+        targetDetailEventdesign.style.display = "block";
+        targetDetailEventdesign.style.opacity = 1;
+        headerBox.style.height = 400 + "px";
+        headerBox.style.opacity = 1;
+    });
+    trigerDetailEventdesign.addEventListener("mouseout", () => {
+        targetDetailEventdesign.style.display = "none";
+        headerBox.style.height = 130 + "px";
+        headerBox.style.opacity = 0.9;
+    });
+
+    targetDetailEventdesign.addEventListener("mouseover", () => {
+        targetDetailEventdesign.previousElementSibling.style.borderBottom = '2px solid #4a99c3';
+        targetDetailEventdesign.previousElementSibling.style.color = '#0b547a';
+
+    });
+
+    targetDetailEventdesign.addEventListener("mouseout", () => {
+        targetDetailEventdesign.previousElementSibling.style.borderBottom = '';
+        targetDetailEventdesign.previousElementSibling.style.color = '#333';
+
+    });
+} else {
+
+    gnb.style.height = window.innerHeight + "px"
+
+    menuBtn.addEventListener("click", () => {
+        if (gnb.style.opacity == '1') {
+            gnb.style.opacity = '0';
+            gnb.style.right = '-200%';
+            article.style.filter = 'blur(0px)';
+        } else {
+            gnb.style.opacity = '1';
+            gnb.style.right = '0';
+            article.style.filter = 'blur(15px)';
+
+        }
+    })
+    trigerDetailDepth.addEventListener("click", (e) => {
+        e.preventDefault();
+        if (targetDetailDepth.style.height == 0 || targetDetailDepth.style.height == "0px") {
+            targetDetailDepth.style.height = 'auto';
+        } else {
+            targetDetailDepth.style.height = "0";
+        }
+        console.log(targetDetailDepth.style.height)
+    });
+
+    trigerDetailLookbook.addEventListener("click", (e) => {
+        e.preventDefault();
+        if (targetDetailLookbook.style.height == 0 || targetDetailLookbook.style.height == "0px") {
+            targetDetailLookbook.style.height = 'auto';
+        } else {
+            targetDetailLookbook.style.height = "0";
+        }
+        console.log(targetDetailLookbook.style.height)
+    });
+
+    trigerDetailEventdesign.addEventListener("click", (e) => {
+        e.preventDefault();
+        if (targetDetailEventdesign.style.height == 0 || targetDetailEventdesign.style.height == "0px") {
+            targetDetailEventdesign.style.height = 'auto';
+        } else {
+            targetDetailEventdesign.style.height = "0";
+        }
+        console.log(targetDetailEventdesign.style.height)
+    });
+
+    //여기까지하고 내일 클릭을 호버이벤트로바꿔보자 !!
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -104,7 +179,7 @@ $(document).ready(function () {
         infinite: true,
         dots: true, //페이지버튼
         autoplay: true, //자동실행
-        pauseOnHover: true, //마우스올렸을때 멈춤기능
+        pauseOnHover: false, //마우스올렸을때 멈춤기능
         autoplaySpeed: 3000, //슬라이드간격(시간)
         speed: 300, //애니메이션 속도
         swipe: true, //pc에서는 마우스 드래그이동, 모바일은 손으로 쓸어넘기는 기능

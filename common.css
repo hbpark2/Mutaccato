@@ -51,6 +51,7 @@ body {
 #content {
     margin: 130px 5% 0;
     width: auto;
+    transition: all 0.5s;
 }
 
 section {
@@ -96,10 +97,13 @@ h1 img {
     overflow: hidden;
 }
 
+nav .menu_btn {
+    display: none;
+}
+
 .depth_1 {
     float: left;
     width: 180px;
-    line-height: 130px;
 }
 
 .depth_1 a {
@@ -117,6 +121,7 @@ h1 img {
 .depth_1>a {
     border-bottom: 2px solid #eee;
     box-sizing: border-box;
+    line-height: 130px;
 }
 
 .depth_1>a:hover {
@@ -237,10 +242,6 @@ h1 img {
 }
 
 
-#content {
-    transition: all 0.5s;
-}
-
 
 footer {
     width: auto;
@@ -261,10 +262,134 @@ footer {
 @media screen and (max-width:1280px) {
     #gnb .depth_1 {
         width: 14%;
+    }
+
+    #gnb .depth_1>a {
         line-height: 130px;
     }
 
     .depth_lookbook_box .tit {
         font-size: 25px;
+    }
+}
+
+/* 일반 pc */
+@media screen and (max-width:1024px) {
+    header {
+        height: 100px;
+        overflow: visible;
+    }
+
+    h1 img {
+        width: 100px;
+    }
+
+    #content {
+        margin: 100px 5% 0;
+        width: auto;
+        transition: all 0.5s;
+    }
+
+    #gnb {
+        opacity: 0;
+        position: absolute;
+        width: 80%;
+        top: 100px;
+        right: -200%;
+        transition: all .5s;
+        background-color: #fff;
+    }
+
+    nav .menu_btn {
+        display: block;
+        float: right;
+        font-size: 24px;
+        color: #333;
+        padding-top: 40px;
+        transition: all .5s;
+        border: none;
+        background: none;
+        outline: none;
+    }
+
+    nav .menu_btn:hover {
+        display: block;
+        float: right;
+        font-size: 24px;
+        color: #0b547a;
+        padding-top: 40px;
+    }
+
+
+    #gnb .depth_1 {
+        float: none;
+        width: 100%;
+    }
+
+    #gnb .depth_1>a {
+        display: block;
+        font-weight: 600;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        transition: all 0.5s;
+        font-size: 14px;
+    }
+
+    #gnb .depth_2>a {
+        font-size: 12px;
+        line-height: 30px;
+    }
+
+    .depth_detail_box {
+        position: static;
+        display: block;
+        height: 0;
+        transition: all .3s;
+    }
+
+    .depth_detail_box>li {
+        float: none;
+    }
+
+    .depth_detail_box .tit {
+        display: none;
+    }
+
+    .depth_detail_box .menu_detail {
+        width: 100%;
+    }
+
+    .depth_detail_box .menu_img {
+        display: none;
+    }
+
+    .depth_lookbook_box {
+        position: static;
+        display: block;
+        height: 0;
+        transition: all .3s;
+    }
+
+    .depth_lookbook_box>li {
+        float: none;
+    }
+
+    .depth_lookbook_box .tit {
+        display: none;
+    }
+
+    .depth_lookbook_box .menu_detail {
+        width: 100%;
+    }
+
+    .depth_lookbook_box .menu_img {
+        display: none;
+    }
+
+
+    .depth_lookbook_box .menu_detail .sub_tit {
+        padding: 0;
+        font-size: 14px;
     }
 }
