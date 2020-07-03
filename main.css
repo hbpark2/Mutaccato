@@ -1,3 +1,63 @@
+.visual_section .muta {
+    height: 800px;
+    filter: grayscale(30%);
+}
+
+#content .visual_section .muta_1 {
+    background: url(img/banner/1.jpg) no-repeat;
+}
+
+#content .visual_section .muta_2 {
+    background: url(img/banner/2.jpg) no-repeat;
+}
+
+#content .visual_section .muta_3 {
+    background: url(img/banner/3.jpg) no-repeat;
+}
+
+#content .visual_section .muta_4 {
+    background: url(img/banner/4.jpg) no-repeat;
+}
+
+#content .visual_section .muta .muta_txt {
+    position: relative;
+    top: 200px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+    color: #fff;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+#content .visual_section .muta .muta_txt>h3 {
+    font-size: 56px;
+    font-family: 'Noto Sans KR', sans-serif;
+
+    text-align: center;
+    padding: 30px 0;
+}
+
+#content .visual_section .muta .muta_txt>span {
+    display: block;
+    font-size: 26px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#content .visual_section .muta .muta_txt>a {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    font-size: 26px;
+    text-align: center;
+    padding: 20px 0;
+    color: #fff
+}
+
+
+
 /*main_txt*/
 .main_txt {
     width: 100%;

@@ -115,7 +115,7 @@ h1 img {
 }
 
 .depth_1>a {
-    border-bottom: 1px solid #eee;
+    border-bottom: 2px solid #eee;
     box-sizing: border-box;
 }
 
@@ -237,7 +237,9 @@ h1 img {
 }
 
 
-
+#content {
+    transition: all 0.5s;
+}
 
 
 footer {

@@ -1,26 +1,4 @@
-/* first nav*/
-// let depthOne = document.querySelectorAll('.depth_1')
-// let depthTwoBox = document.querySelectorAll('.depth_1 > ul')
-// let headerBox = document.querySelector('header')
-// for(let i = 0; i < depthOne.length; i++){
-//   depthOne[i].addEventListener('mouseover',function(event){
-//     for(let a = 0; a < depthTwoBox.length; a++){
-//       console.log(depthTwoBox[a].style.height = 400 + 'px')
-//       headerBox.style.height = 400 + 'px'
-//     }
-//   })
-// }
-
-// for(let i = 0; i < depthOne.length; i++){
-//   depthOne[i].addEventListener('mouseout',function(event){
-//     for(let a = 0; a < depthTwoBox.length; a++){
-//       console.log(depthTwoBox[a].style.height = '0')
-//       headerBox.style.height = 130 + 'px'
-//     }
-//   })
-// }
-
-/**secon nav */
+/**second nav */
 const headerBox = document.querySelector("header");
 const trigerDetailDepth = document.querySelector(".depth_detail");
 const trigerDetailLookbook = document.querySelector(".depth_lookbook");
@@ -32,12 +10,15 @@ const targetDetailEventdesign = document.querySelector(
     ".depth_eventdesign > ul"
 );
 
-// console.log(detailDepth, detailLookbook, detailEventdesign)
-//헤더 크기, opacity
-// headerBox.addEventListener('mouseover', () => headerBox.style.height = 400 + 'px')
-// headerBox.addEventListener('mouseout', () => headerBox.style.height = 130 + 'px')
-// headerBox.addEventListener('mouseover', () => headerBox.style.opacity = 1)
-// headerBox.addEventListener('mouseout', () => headerBox.style.opacity = 0.9)
+const article = document.getElementById("content")
+let menuDetail = document.querySelectorAll(".menu_detail")
+
+headerBox.addEventListener("mouseover", () => {
+    article.style.filter = 'grayscale(95%)';
+})
+headerBox.addEventListener("mouseout", () => {
+    article.style.filter = 'none';
+})
 
 //상세페이지
 trigerDetailDepth.addEventListener("mouseover", () => {
@@ -46,6 +27,18 @@ trigerDetailDepth.addEventListener("mouseover", () => {
     headerBox.style.height = 400 + "px";
     headerBox.style.opacity = 1;
 });
+
+targetDetailDepth.addEventListener("mouseover", () => {
+    targetDetailDepth.previousElementSibling.style.borderBottom = '2px solid #4a99c3';
+    targetDetailDepth.previousElementSibling.style.color = '#0b547a';
+});
+
+targetDetailDepth.addEventListener("mouseout", () => {
+    targetDetailDepth.previousElementSibling.style.borderBottom = '';
+    targetDetailDepth.previousElementSibling.style.color = '#333';
+});
+
+
 trigerDetailDepth.addEventListener("mouseout", () => {
     targetDetailDepth.style.display = "none";
     headerBox.style.height = 130 + "px";
@@ -65,6 +58,19 @@ trigerDetailLookbook.addEventListener("mouseout", () => {
     headerBox.style.opacity = 0.9;
 });
 
+targetDetailLookbook.addEventListener("mouseover", () => {
+    targetDetailLookbook.previousElementSibling.style.borderBottom = '2px solid #4a99c3';
+    targetDetailLookbook.previousElementSibling.style.color = '#0b547a';
+
+});
+
+targetDetailLookbook.addEventListener("mouseout", () => {
+    targetDetailLookbook.previousElementSibling.style.borderBottom = '';
+    targetDetailLookbook.previousElementSibling.style.color = '#333';
+
+});
+
+
 //이벤트디자인
 trigerDetailEventdesign.addEventListener("mouseover", () => {
     targetDetailEventdesign.style.display = "block";
@@ -77,6 +83,54 @@ trigerDetailEventdesign.addEventListener("mouseout", () => {
     headerBox.style.height = 130 + "px";
     headerBox.style.opacity = 0.9;
 });
+
+targetDetailEventdesign.addEventListener("mouseover", () => {
+    targetDetailEventdesign.previousElementSibling.style.borderBottom = '2px solid #4a99c3';
+    targetDetailEventdesign.previousElementSibling.style.color = '#0b547a';
+
+});
+
+targetDetailEventdesign.addEventListener("mouseout", () => {
+    targetDetailEventdesign.previousElementSibling.style.borderBottom = '';
+    targetDetailEventdesign.previousElementSibling.style.color = '#333';
+
+});
+
+
+
+$(document).ready(function () {
+    $(".lazy").slick({
+        lazyLoad: 'ondemand', // ondemand progressive anticipated
+        infinite: true,
+        dots: true, //페이지버튼
+        autoplay: true, //자동실행
+        pauseOnHover: false, //마우스올렸을때 멈춤기능
+        autoplaySpeed: 3000, //슬라이드간격(시간)
+        speed: 300, //애니메이션 속도
+        swipe: true, //pc에서는 마우스 드래그이동, 모바일은 손으로 쓸어넘기는 기능
+        slide: 'div', //슬라이드로 사용할 엘리먼트 지정
+        arrows: false
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // 룩북 3뎁스 트리거와 타겟
 // const trigerLookbook1 = document.querySelector('.first_of_lookbook')
