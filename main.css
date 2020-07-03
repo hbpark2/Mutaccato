@@ -1,6 +1,6 @@
 .visual_section .muta {
     height: 800px;
-    filter: grayscale(30%);
+    filter: grayscale(10%);
 }
 
 #content .visual_section .muta_1 {
@@ -27,15 +27,14 @@
     text-align: center;
     padding: 50px 0;
     color: #fff;
-    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #content .visual_section .muta .muta_txt>h3 {
     font-size: 56px;
     font-family: 'Noto Sans KR', sans-serif;
-
     text-align: center;
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 #content .visual_section .muta .muta_txt>span {
@@ -47,13 +46,22 @@
 
 #content .visual_section .muta .muta_txt>a {
     display: block;
-    width: 30%;
-    margin: 0 auto;
-    border: 1px solid #fff;
+    width: 250px;
+    margin: 10px auto;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
     font-size: 26px;
+    font-weight: 600;
     text-align: center;
     padding: 20px 0;
-    color: #fff
+    color: #fff;
+    transition: all .5s;
+}
+
+#content .visual_section .muta .muta_txt>a:hover {
+    color: #4a99c3;
+    background-color: #fff;
+
 }
 
 
