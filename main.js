@@ -139,7 +139,7 @@ if (window.innerWidth > 1024) {
 
     trigerDetailLookbook.addEventListener("click", (e) => {
         if (targetDetailLookbook.style.height == 0 || targetDetailLookbook.style.height == "0px") {
-            targetDetailLookbook.style.height = '600px';
+            targetDetailLookbook.style.height = '400px';
         } else {
             targetDetailLookbook.style.height = "0";
         }
