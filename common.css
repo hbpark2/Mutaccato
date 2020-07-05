@@ -231,19 +231,19 @@ nav .menu_btn {
     font-size: 32px;
     text-align: center;
     font-weight: 600;
-    padding: 3% 0;
+    padding: 2% 0;
 }
 
 .depth_lookbook_box .menu_detail {
     width: 12%;
-    padding: 3% 0;
+    padding: 2% 0;
 }
 
 .depth_lookbook_box .menu_detail .sub_tit {
     display: block;
     height: 20px;
     margin: 0;
-    padding: 3% 0 5%;
+    padding: 2% 0 5%;
     line-height: 20px;
     text-align: center;
 }
@@ -422,6 +422,11 @@ footer {
 
     .depth_lookbook_box .menu_detail {
         width: 100%;
+    }
+
+    .depth_lookbook_box .menu_detail a {
+        height: 25px;
+        line-height: 25px;
     }
 
     .depth_lookbook_box .menu_img {
