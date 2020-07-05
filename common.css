@@ -336,13 +336,12 @@ footer {
         float: right;
         font-size: 24px;
         color: #333;
-        padding-top: 40px;
+        padding: 40px 25px;
         transition: all .5s;
         border: none;
         background: none;
         outline: none;
-        margin-right: 10px;
-        transform-origin: 50% 75%;
+        transform-origin: 50% 50%;
         transform: rotate(0deg);
     }
 
