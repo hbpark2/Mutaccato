@@ -341,14 +341,11 @@ footer {
         border: none;
         background: none;
         outline: none;
+        margin-right: 10px;
     }
 
     nav .menu_btn:hover {
-        display: block;
-        float: right;
-        font-size: 24px;
         color: #0b547a;
-        padding-top: 40px;
     }
 
 
