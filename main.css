@@ -30,21 +30,21 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-#content .visual_section .muta .muta_txt > h3 {
+#content .visual_section .muta .muta_txt>h3 {
     font-size: 56px;
     font-family: "Noto Sans KR", sans-serif;
     text-align: center;
     padding: 20px 0;
 }
 
-#content .visual_section .muta .muta_txt > span {
+#content .visual_section .muta .muta_txt>span {
     display: block;
     font-size: 26px;
     text-align: center;
     padding: 20px 0;
 }
 
-#content .visual_section .muta .muta_txt > a {
+#content .visual_section .muta .muta_txt>a {
     display: block;
     width: 250px;
     margin: 10px auto;
@@ -58,7 +58,7 @@
     transition: all 0.5s;
 }
 
-#content .visual_section .muta .muta_txt > a:hover {
+#content .visual_section .muta .muta_txt>a:hover {
     color: #4a99c3;
     background-color: #fff;
 }
@@ -85,4 +85,54 @@
     display: block;
     margin: 50px 0 0;
     font-weight: 600;
+}
+
+
+
+
+
+@media screen and (max-width:1024px) {
+    .visual_section .muta {
+        height: 600px;
+        filter: grayscale(10%);
+    }
+
+    #content .visual_section .muta .muta_txt {
+        position: relative;
+        top: 100px;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 50px 0;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    #content .visual_section .muta .muta_txt>h3 {
+        font-size: 32px;
+        font-family: "Noto Sans KR", sans-serif;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    #content .visual_section .muta .muta_txt>span {
+        display: block;
+        font-size: 22px;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    #content .visual_section .muta .muta_txt>a {
+        display: block;
+        width: 250px;
+        margin: 10px auto;
+        border: 1px solid #fff;
+        border-radius: 50px;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        padding: 20px 0;
+        color: #fff;
+        transition: all 0.5s;
+    }
 }
