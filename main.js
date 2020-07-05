@@ -118,33 +118,41 @@ if (window.innerWidth > 1024) {
 
         }
     })
-    trigerDetailDepth.addEventListener("mouseover", () => {
+    // trigerDetailDepth.addEventListener("mouseover", () => {
+    //     if (targetDetailDepth.style.height == 0 || targetDetailDepth.style.height == "0px") {
+    //         targetDetailDepth.style.height = '180px';
+    //     }
+    //     console.log(targetDetailDepth.style.height)
+    // });
+    // targetDetailDepth.addEventListener("mouseout", () => {
+    //     targetDetailDepth.style.height = 0;
+    // })
+
+    trigerDetailDepth.addEventListener("click", (e) => {
         if (targetDetailDepth.style.height == 0 || targetDetailDepth.style.height == "0px") {
             targetDetailDepth.style.height = '180px';
+        } else {
+            targetDetailDepth.style.height = "0";
         }
-        console.log(targetDetailDepth.style.height)
     });
-    targetDetailDepth.addEventListener("mouseout", () => {
-        targetDetailDepth.style.height = 0;
-    })
 
-    trigerDetailLookbook.addEventListener("mouseover", (e) => {
+
+    trigerDetailLookbook.addEventListener("click", (e) => {
         if (targetDetailLookbook.style.height == 0 || targetDetailLookbook.style.height == "0px") {
             targetDetailLookbook.style.height = '600px';
+        } else {
+            targetDetailLookbook.style.height = "0";
         }
     });
-    targetDetailLookbook.addEventListener("mouseout", () => {
-        targetDetailLookbook.style.height = 0;
-    })
+
+
 
     trigerDetailEventdesign.addEventListener("click", (e) => {
-        e.preventDefault();
         if (targetDetailEventdesign.style.height == 0 || targetDetailEventdesign.style.height == "0px") {
-            targetDetailEventdesign.style.height = 'auto';
+            targetDetailEventdesign.style.height = '180px';
         } else {
             targetDetailEventdesign.style.height = "0";
         }
-        console.log(targetDetailEventdesign.style.height)
     });
 
     //여기까지하고 내일 클릭을 호버이벤트로바꿔보자 !!
