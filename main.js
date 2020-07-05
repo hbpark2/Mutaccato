@@ -102,7 +102,7 @@ if (window.innerWidth > 1024) {
         targetDetailEventdesign.previousElementSibling.style.color = '#333';
 
     });
-} else {
+} else { // max-width 1024px, 태블릿, 모바일 
 
     gnb.style.height = window.innerHeight + "px"
 
@@ -118,25 +118,24 @@ if (window.innerWidth > 1024) {
 
         }
     })
-    trigerDetailDepth.addEventListener("click", (e) => {
-        e.preventDefault();
+    trigerDetailDepth.addEventListener("mouseover", () => {
         if (targetDetailDepth.style.height == 0 || targetDetailDepth.style.height == "0px") {
-            targetDetailDepth.style.height = 'auto';
-        } else {
-            targetDetailDepth.style.height = "0";
+            targetDetailDepth.style.height = '180px';
         }
         console.log(targetDetailDepth.style.height)
     });
+    targetDetailDepth.addEventListener("mouseout", () => {
+        targetDetailDepth.style.height = 0;
+    })
 
-    trigerDetailLookbook.addEventListener("click", (e) => {
-        e.preventDefault();
+    trigerDetailLookbook.addEventListener("mouseover", (e) => {
         if (targetDetailLookbook.style.height == 0 || targetDetailLookbook.style.height == "0px") {
-            targetDetailLookbook.style.height = 'auto';
-        } else {
-            targetDetailLookbook.style.height = "0";
+            targetDetailLookbook.style.height = '600px';
         }
-        console.log(targetDetailLookbook.style.height)
     });
+    targetDetailLookbook.addEventListener("mouseout", () => {
+        targetDetailLookbook.style.height = 0;
+    })
 
     trigerDetailEventdesign.addEventListener("click", (e) => {
         e.preventDefault();
