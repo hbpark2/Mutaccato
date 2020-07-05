@@ -342,6 +342,8 @@ footer {
         background: none;
         outline: none;
         margin-right: 10px;
+        transform-origin: 50% 75%;
+        transform: rotate(0deg);
     }
 
     nav .menu_btn:hover {

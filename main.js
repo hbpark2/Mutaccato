@@ -103,21 +103,31 @@ if (window.innerWidth > 1024) {
 
     });
 } else { // max-width 1024px, 태블릿, 모바일 
-
+    let moving = true;
     gnb.style.height = window.innerHeight + "px"
-
     menuBtn.addEventListener("click", () => {
+        if (moving) {
+            menuBtn.style.transform = 'rotate(360deg)';
+            moving = false;
+        } else {
+            menuBtn.style.transform = 'rotate(0deg)';
+            moving = true;
+        }
+
         if (gnb.style.opacity == '1') {
             gnb.style.opacity = '0';
             gnb.style.right = '-200%';
             article.style.filter = 'blur(0px)';
+
         } else {
             gnb.style.opacity = '1';
             gnb.style.right = '0';
             article.style.filter = 'blur(15px)';
-
         }
+
     })
+
+
     // trigerDetailDepth.addEventListener("mouseover", () => {
     //     if (targetDetailDepth.style.height == 0 || targetDetailDepth.style.height == "0px") {
     //         targetDetailDepth.style.height = '180px';
