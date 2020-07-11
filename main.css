@@ -29,9 +29,6 @@
     color: #fff;
     background-color: rgba(0, 0, 0, 0.5);
 }
-#content .visual_section .muta_1 .muta_txt {
-    top: 120px;
-}
 
 #content .visual_section .muta .muta_txt > h3 {
     font-size: 56px;
@@ -98,9 +95,9 @@
 
     #content .visual_section .muta .muta_txt {
         position: relative;
-        top: 0;
+        top: 50px;
         width: 80%;
-        height: 372px;
+        height: 260px;
         margin: 50px auto;
         text-align: center;
         padding: 50px 0;
@@ -109,12 +106,17 @@
     }
 
     #content .visual_section .muta .muta_txt > h3 {
-        font-size: 26px;
+        font-size: 24px;
         font-family: "Noto Sans KR", sans-serif;
         text-align: center;
         padding: 20px 0;
     }
-
+    #content .visual_section .muta_1 .muta_txt > h3 {
+        font-size: 22px;
+        font-family: "Noto Sans KR", sans-serif;
+        text-align: center;
+        padding: 20px 0;
+    }
     #content .visual_section .muta .muta_txt > span {
         display: block;
         font-size: 18px;
