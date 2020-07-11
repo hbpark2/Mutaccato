@@ -89,13 +89,13 @@
 
 @media screen and (max-width: 1024px) {
     .visual_section .muta {
-        height: 600px;
+        height: 500px;
         filter: grayscale(10%);
     }
 
     #content .visual_section .muta .muta_txt {
         position: relative;
-        top: 50px;
+        top: 25px;
         width: 80%;
         height: 260px;
         margin: 50px auto;
@@ -104,7 +104,9 @@
         color: #fff;
         background-color: rgba(0, 0, 0, 0.5);
     }
-
+    .visual_section > .slick-dots {
+        bottom: 25px;
+    }
     #content .visual_section .muta .muta_txt > h3 {
         font-size: 24px;
         font-family: "Noto Sans KR", sans-serif;
@@ -112,10 +114,10 @@
         padding: 20px 0;
     }
     #content .visual_section .muta_1 .muta_txt > h3 {
-        font-size: 22px;
-        font-family: "Noto Sans KR", sans-serif;
-        text-align: center;
-        padding: 20px 0;
+        font-size: 20px;
+    }
+    #content .visual_section .muta_4 .muta_txt > h3 {
+        font-size: 20px;
     }
     #content .visual_section .muta .muta_txt > span {
         display: block;
