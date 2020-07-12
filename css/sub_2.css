@@ -1,0 +1,86 @@
+.tab>li>a.active {
+    color: #0b547a;
+    font-weight: 600;
+}
+
+.tab {
+    width: 300px;
+    text-align: center;
+    padding: 65px 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.tab>li {
+    float: left;
+}
+
+.tab>li>a {
+    display: block;
+    font-size: 16px;
+    width: 100px;
+    border-left: 1px solid #ababab;
+    box-sizing: border-box;
+    color: #ababab;
+}
+
+.tab>li:first-child>a {
+    border: none;
+}
+
+ul.thum_wrap {
+    width: 95%;
+    margin: 0 auto;
+}
+
+li.thum_box {
+    position: relative;
+    width: 20%;
+    height: 630px;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin: 2% 1.5%;
+    overflow: hidden;
+}
+
+li.thum_box>img {
+    width: 100%;
+
+}
+
+li.thum_box>a {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 630px;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(0.5);
+    opacity: 0;
+    transition: all 1s;
+}
+
+li.thum_box:hover>a {
+    transform: scale(1);
+    opacity: 1;
+}
+
+li.thum_box>a>i.fas {
+    color: #fff;
+    font-size: 32px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media screen and (max-width:1024px) {
+    li.thum_box {
+        width: 100%;
+        height: 500px;
+        margin: 5% 1.5%;
+    }
+
+}
