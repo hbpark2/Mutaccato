@@ -93,8 +93,37 @@
 }
 
 .sub_desc {
-    font-size: 32px;
+    font-size: 28px;
 }
+
+/*go page*/
+.work_section>ul {
+    overflow: hidden;
+    display: flex;
+
+}
+
+.work_section>ul>li {
+    width: calc(100%/3);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.work_section>ul>li img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.work_section>ul>li span {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    padding: 30px 0;
+    color: #333;
+}
+
 
 @media screen and (max-width: 1024px) {
     .visual_section .muta {
