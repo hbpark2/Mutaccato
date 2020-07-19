@@ -107,6 +107,7 @@ li.thum_box>a>i.fas {
     z-index: 200;
     cursor: pointer;
     font-size: 33px;
+    opacity: 0;
 }
 
 /*banner*/
@@ -172,26 +173,6 @@ li.b_thum_box>a>i.fas {
     transform: translate(-50%);
 }
 
-.b_showbox {
-    position: fixed;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    z-index: -5;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    transition: all 0.5s;
-    overflow: scroll;
-}
-
-.b_close_btn>i {
-    color: #fff;
-    position: fixed;
-    top: 30px;
-    z-index: 200;
-    cursor: pointer;
-    font-size: 33px;
-}
 
 .b_showbox .detail_img {
     position: absolute;
