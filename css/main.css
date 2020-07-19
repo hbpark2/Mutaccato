@@ -75,16 +75,25 @@
     font-weight: 500;
 }
 
+.main_txt span {
+    display: block;
+}
+
 .main_txt .font_box {
     width: 200px;
     padding: 20px;
     border: 1px solid #0b547a;
+    margin: 0 auto;
 }
 
 .sub_tit {
-    display: block;
-    margin: 50px 0 0;
+    margin: 50px 0;
     font-weight: 600;
+    font-size: 28px;
+}
+
+.sub_desc {
+    font-size: 32px;
 }
 
 @media screen and (max-width: 1024px) {

@@ -7,12 +7,21 @@
     <title>Mutaccato</title>
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/sub_2.css">
+    <link rel="stylesheet" href="css/lightgallery.css">
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"
         integrity="sha256-ihAoc6M/JPfrIiIeayPE9xjin4UWjsx2mjW/rtmxLM4=" crossorigin="anonymous"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/lightgallery.min.js"></script>
     <script defer src="js/common.js"></script>
+    <script defer src="js/sub_3.js"></script>
     <script src="https://kit.fontawesome.com/e39232b629.js" crossorigin="anonymous"></script>
+
+
+
 
 </head>
 
@@ -137,61 +146,116 @@
                 <li><a href="sub_2_2.html">Food</a></li>
                 <li><a href="sub_2_3.html" class="active">Banner</a></li>
             </ul>
-            <ul class="thum_wrap">
-                <li class="thum_box">
-                    <img src="img/detail/furniture/DCcomins-DTYPE.png" alt="">
-                    <a href=""><i class="fas fa-search"></i></a>
+            <div class="b_close_btn"><i class="fas fa-times"></i></div>
+
+            <ul class="b_thum_wrap">
+                <li class="b_thum_box item" data-src="img/detail/banner/b_1.jpg">
+                    <img src="img/detail/banner/b_1.jpg" alt="">
+                    <a href="#"><i class="fas fa-search"></i></a>
                 </li>
-                <li class="thum_box">
-                    <img src="img/detail/furniture/DCstandrard.jpg" alt="">
-                    <a href=""><i class="fas fa-search"></i></a>
+                <li class="b_thum_box item" data-src="img/detail/banner/b_2.jpg">
+                    <img src="img/detail/banner/b_2.jpg" alt="">
+                    <a href="#"><i class="fas fa-search"></i></a>
                 </li>
-                <li class="thum_box">
-                    <img src="img/detail/furniture/DC_2_1.jpg" alt="">
-                    <a href=""><i class="fas fa-search"></i></a>
+                <li class="b_thum_box item" data-src="img/detail/banner/b_3.jpg">
+                    <img src="img/detail/banner/b_3.jpg" alt="">
+                    <a href="#"><i class="fas fa-search"></i></a>
                 </li>
-                <li class="thum_box">
-                    <img src="img/detail/furniture/DC_2_2.jpg" alt="">
-                    <a href=""><i class="fas fa-search"></i></a>
+                <li class="b_thum_box item" data-src="img/detail/banner/b_4.jpg">
+                    <img src="img/detail/banner/b_4.jpg" alt="">
+                    <a href="#"><i class="fas fa-search"></i></a>
                 </li>
-                <li class="thum_box">
-                    <img src="img/detail/furniture/CBT.jpg" alt="">
-                    <a href=""><i class="fas fa-search"></i></a>
+                <li class="b_thum_box item" data-src="img/detail/banner/b_5.jpg">
+                    <img src="img/detail/banner/b_5.jpg" alt="">
+                    <a href="#"><i class="fas fa-search"></i></a>
                 </li>
-                <li class="thum_box">
-                    <img src="img/detail/furniture/ardor.jpg" alt="">
-                    <a href=""><i class="fas fa-search"></i></a>
+                <li class="b_thum_box item" data-src="img/detail/banner/b_6.jpg">
+                    <img src="img/detail/banner/b_6.jpg" alt="">
+                    <a href="#"><i class="fas fa-search"></i></a>
                 </li>
-                <li class="thum_box">
-                    <img src="img/detail/furniture/Delta.jpg" alt="">
-                    <a href=""><i class="fas fa-search"></i></a>
+                <li class="b_thum_box item" data-src="img/detail/banner/b_7.jpg">
+                    <img src="img/detail/banner/b_7.jpg" alt="">
+                    <a href="#"><i class="fas fa-search"></i></a>
                 </li>
-                <li class="thum_box">
-                    <img src="img/detail/furniture/dongsuh_CNP01_leather_chair.jpg" alt="">
-                    <a href=""><i class="fas fa-search"></i></a>
+                <li class="b_thum_box item" data-src="img/detail/banner/b_8.jpg">
+                    <img src="img/detail/banner/b_8.jpg" alt="">
+                    <a href="#"><i class="fas fa-search"></i></a>
                 </li>
-                <li class="thum_box"><img src="img/detail/furniture/glide.jpg" alt="">
-                    <a href=""><i class="fas fa-search"></i></a>
+                <li class="b_thum_box item" data-src="img/detail/banner/b_9.jpg">
+                    <img src="img/detail/banner/b_9.jpg" alt="">
+                    <a href="#"><i class="fas fa-search"></i></a>
                 </li>
-                <li class="thum_box"><img src="img/detail/furniture/maximum.jpg" alt="">
-                    <a href=""><i class="fas fa-search"></i></a>
+                <li class="b_thum_box item" data-src="img/detail/banner/b_10.jpg">
+                    <img src="img/detail/banner/b_10.jpg" alt="">
+                    <a href="#"><i class="fas fa-search"></i></a>
                 </li>
-                <li class="thum_box"><img src="img/detail/furniture/racing_full.jpg" alt="">
-                    <a href=""><i class="fas fa-search"></i></a>
+                <li class="b_thum_box item" data-src="img/detail/banner/b_11.jpg">
+                    <img src="img/detail/banner/b_11.jpg" alt="">
+                    <a href="#"><i class="fas fa-search"></i></a>
                 </li>
-                <li class="thum_box"><img src="img/detail/furniture/liberty.jpg" alt="">
-                    <a href=""><i class="fas fa-search"></i></a>
+                <li class="b_thum_box item" data-src="img/detail/banner/b_12.jpg">
+                    <img src="img/detail/banner/b_12.jpg" alt="">
+                    <a href="#"><i class="fas fa-search"></i></a>
                 </li>
-                <li class="thum_box"><img src="img/detail/furniture/trueper.jpg" alt="">
-                    <a href=""><i class="fas fa-search"></i></a>
+                <li class="b_thum_box item" data-src="img/detail/banner/b_13.jpg">
+                    <img src="img/detail/banner/b_13.jpg" alt="">
+                    <a href="#"><i class="fas fa-search"></i></a>
                 </li>
-                <li class="thum_box"><img src="img/detail/furniture/trueperM.jpg" alt="">
-                    <a href=""><i class="fas fa-search"></i></a>
+                <li class="b_thum_box item" data-src="img/detail/banner/b_14.jpg">
+                    <img src="img/detail/banner/b_14.jpg" alt="">
+                    <a href="#"><i class="fas fa-search"></i></a>
                 </li>
-                <li class="thum_box"><img src="img/detail/furniture/village.jpg" alt="">
-                    <a href=""><i class="fas fa-search"></i></a>
+                <li class="b_thum_box item" data-src="img/detail/banner/b_15.jpg">
+                    <img src="img/detail/banner/b_15.jpg" alt="">
+                    <a href="#"><i class="fas fa-search"></i></a>
                 </li>
-            </ul>
+                <li class="b_thum_box item" data-src="img/detail/banner/b_16.jpg">
+                    <img src="img/detail/banner/b_16.jpg" alt="">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                </li>
+                <li class="b_thum_box item" data-src="img/detail/banner/b_17.jpg">
+                    <img src="img/detail/banner/b_17.jpg" alt="">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                </li>
+                <li class="b_thum_box item" data-src="img/detail/banner/b_18.jpg">
+                    <img src="img/detail/banner/b_18.jpg" alt="">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                </li>
+                <li class="b_thum_box item" data-src="img/detail/banner/b_19.jpg">
+                    <img src="img/detail/banner/b_19.jpg" alt="">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                </li>
+                <li class="b_thum_box item" data-src="img/detail/banner/b_20.jpg">
+                    <img src="img/detail/banner/b_20.jpg" alt="">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                </li>
+                <li class="b_thum_box item" data-src="img/detail/banner/b_21.jpg">
+                    <img src="img/detail/banner/b_21.jpg" alt="">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                </li>
+                <li class="b_thum_box item" data-src="img/detail/banner/b_22.jpg">
+                    <img src="img/detail/banner/b_22.jpg" alt="">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                </li>
+                <li class="b_thum_box item" data-src="img/detail/banner/b_23.jpg">
+                    <img src="img/detail/banner/b_23.jpg" alt="">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                </li>
+                <li class="b_thum_box item" data-src="img/detail/banner/b_24.jpg">
+                    <img src="img/detail/banner/b_24.jpg" alt="">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                </li>
+                <li class="b_thum_box item" data-src="img/detail/banner/b_25.jpg">
+                    <img src="img/detail/banner/b_25.jpg" alt="">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                </li>
+                <li class="b_thum_box item" data-src="img/detail/banner/b_26.jpg">
+                    <img src="img/detail/banner/b_26.jpg" alt="">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                </li>
+
+
+
         </article>
 
         <footer>
