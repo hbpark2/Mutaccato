@@ -81,7 +81,7 @@
 
 .main_txt .font_box {
     width: 200px;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #0b547a;
     margin: 0 auto;
 }
@@ -105,8 +105,11 @@
 
 .work_section>ul>li {
     width: calc(100%/3);
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
+}
+
+.work_section>ul>li div {
+    height: 510px;
     overflow: hidden;
 }
 
@@ -114,6 +117,12 @@
     display: block;
     margin: 0 auto;
     width: 80%;
+}
+
+.work_section>ul>li:nth-child(2) img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .work_section>ul>li span {
