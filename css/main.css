@@ -22,7 +22,7 @@
 #content .visual_section .muta .muta_txt {
     position: relative;
     top: 200px;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     text-align: center;
     padding: 50px 0;
@@ -100,17 +100,19 @@
 .work_section>ul {
     overflow: hidden;
     display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
 
 }
 
 .work_section>ul>li {
-    width: calc(100%/3);
     overflow: hidden;
 }
 
 .work_section>ul>li div {
-    height: 510px;
     overflow: hidden;
+
 }
 
 .work_section>ul>li img {
@@ -119,11 +121,6 @@
     width: 80%;
 }
 
-.work_section>ul>li:nth-child(2) img {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-}
 
 .work_section>ul>li span {
     display: block;
@@ -133,6 +130,56 @@
     color: #333;
 }
 
+.about_box {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about_box>li {
+    width: 48%;
+    margin: 50px auto 100px;
+    height: 500px;
+}
+
+.about_box>.c_txt {
+    background-color: #fafafa;
+}
+
+.about_box>.c_txt>.c_txt_inner {
+    /* background-color: #ccc; */
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    margin-top: 3.5%;
+}
+
+.c_txt_inner span {
+    display: block;
+}
+
+.c_pic img {
+    width: 100%;
+}
+
+.c_tit {
+    font-size: 22px;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.c_sub_tit {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.c_txt_inner li {
+    margin: 5px 0;
+    font-size: 18px;
+}
 
 @media screen and (max-width: 1024px) {
     .visual_section .muta {

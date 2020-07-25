@@ -1,13 +1,13 @@
 const headerBox = document.querySelector("header");
 const trigerDetailDepth = document.querySelector(".depth_detail");
 const trigerDetailLookbook = document.querySelector(".depth_lookbook");
-const trigerDetailEventdesign = document.querySelector(".depth_eventdesign");
+// const trigerDetailEventdesign = document.querySelector(".depth_eventdesign");
 
 const targetDetailDepth = document.querySelector(".depth_detail > ul");
 const targetDetailLookbook = document.querySelector(".depth_lookbook > ul");
-const targetDetailEventdesign = document.querySelector(
-    ".depth_eventdesign > ul"
-);
+// const targetDetailEventdesign = document.querySelector(
+//     ".depth_eventdesign > ul"
+// );
 
 const article = document.getElementById("content")
 let menuDetail = document.querySelectorAll(".menu_detail")
@@ -16,6 +16,7 @@ const menuBtn = document.querySelector('.menu_btn')
 const gnb = document.getElementById('gnb')
 const goPagedetail = document.querySelector('.go_detail')
 goPagedetail.addEventListener('click', () => location.href = 'sub_1.html')
+
 
 
 if (window.innerWidth > 1024) {
@@ -60,49 +61,75 @@ if (window.innerWidth > 1024) {
         headerBox.style.height = 400 + "px";
         headerBox.style.opacity = 1;
     });
+
+    targetDetailLookbook.addEventListener("mouseover", () => {
+        targetDetailLookbook.previousElementSibling.style.borderBottom = '2px solid #4a99c3';
+        targetDetailLookbook.previousElementSibling.style.color = '#0b547a';
+    });
+
+    targetDetailLookbook.addEventListener("mouseout", () => {
+        targetDetailLookbook.previousElementSibling.style.borderBottom = '';
+        targetDetailLookbook.previousElementSibling.style.color = '#333';
+    });
+
+
     trigerDetailLookbook.addEventListener("mouseout", () => {
         targetDetailLookbook.style.display = "none";
         headerBox.style.height = 130 + "px";
         headerBox.style.opacity = 0.9;
     });
 
-    targetDetailLookbook.addEventListener("mouseover", () => {
-        targetDetailLookbook.previousElementSibling.style.borderBottom = '2px solid #4a99c3';
-        targetDetailLookbook.previousElementSibling.style.color = '#0b547a';
 
-    });
 
-    targetDetailLookbook.addEventListener("mouseout", () => {
-        targetDetailLookbook.previousElementSibling.style.borderBottom = '';
-        targetDetailLookbook.previousElementSibling.style.color = '#333';
+    // trigerDetailLookbook.addEventListener("mouseover", () => {
+    //     targetDetailLookbook.style.display = "block";
+    //     targetDetailLookbook.style.opacity = 1;
+    //     headerBox.style.height = 400 + "px";
+    //     headerBox.style.opacity = 1;
+    // });
+    // trigerDetailLookbook.addEventListener("mouseout", () => {
+    //     targetDetailLookbook.style.display = "none";
+    //     headerBox.style.height = 130 + "px";
+    //     headerBox.style.opacity = 0.9;
+    // });
 
-    });
+    // targetDetailLookbook.addEventListener("mouseover", () => {
+    //     targetDetailLookbook.previousElementSibling.style.borderBottom = '2px solid #4a99c3';
+    //     targetDetailLookbook.previousElementSibling.style.color = '#0b547a';
+
+    // });
+
+    // targetDetailLookbook.addEventListener("mouseout", () => {
+    //     targetDetailLookbook.previousElementSibling.style.borderBottom = '';
+    //     targetDetailLookbook.previousElementSibling.style.color = '#333';
+
+    // });
 
 
     //이벤트디자인
-    trigerDetailEventdesign.addEventListener("mouseover", () => {
-        targetDetailEventdesign.style.display = "block";
-        targetDetailEventdesign.style.opacity = 1;
-        headerBox.style.height = 400 + "px";
-        headerBox.style.opacity = 1;
-    });
-    trigerDetailEventdesign.addEventListener("mouseout", () => {
-        targetDetailEventdesign.style.display = "none";
-        headerBox.style.height = 130 + "px";
-        headerBox.style.opacity = 0.9;
-    });
+    // trigerDetailEventdesign.addEventListener("mouseover", () => {
+    //     targetDetailEventdesign.style.display = "block";
+    //     targetDetailEventdesign.style.opacity = 1;
+    //     headerBox.style.height = 400 + "px";
+    //     headerBox.style.opacity = 1;
+    // });
+    // trigerDetailEventdesign.addEventListener("mouseout", () => {
+    //     targetDetailEventdesign.style.display = "none";
+    //     headerBox.style.height = 130 + "px";
+    //     headerBox.style.opacity = 0.9;
+    // });
 
-    targetDetailEventdesign.addEventListener("mouseover", () => {
-        targetDetailEventdesign.previousElementSibling.style.borderBottom = '2px solid #4a99c3';
-        targetDetailEventdesign.previousElementSibling.style.color = '#0b547a';
+    // targetDetailEventdesign.addEventListener("mouseover", () => {
+    //     targetDetailEventdesign.previousElementSibling.style.borderBottom = '2px solid #4a99c3';
+    //     targetDetailEventdesign.previousElementSibling.style.color = '#0b547a';
 
-    });
+    // });
 
-    targetDetailEventdesign.addEventListener("mouseout", () => {
-        targetDetailEventdesign.previousElementSibling.style.borderBottom = '';
-        targetDetailEventdesign.previousElementSibling.style.color = '#333';
+    // targetDetailEventdesign.addEventListener("mouseout", () => {
+    //     targetDetailEventdesign.previousElementSibling.style.borderBottom = '';
+    //     targetDetailEventdesign.previousElementSibling.style.color = '#333';
 
-    });
+    // });
 } else { // max-width 1024px, 태블릿, 모바일 
     let moving = true;
     gnb.style.height = window.innerHeight + "px"
