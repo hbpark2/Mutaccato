@@ -99,6 +99,20 @@ h1 img {
     margin: 0 auto;
 }
 
+.go_insta {
+    position: absolute;
+    top: 45px;
+    right: 250px;
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.go_insta>img {
+    width: 100%;
+
+}
+
 #gnb {
     width: 85%;
     overflow: hidden;
@@ -149,6 +163,8 @@ nav .menu_btn {
     border-bottom: 2px solid #eee;
     box-sizing: border-box;
     line-height: 130px;
+    color: #000;
+    font-weight: 700;
 }
 
 .depth_1>a:hover {
@@ -287,6 +303,11 @@ footer {
 
 /* 일반 pc */
 @media screen and (max-width:1280px) {
+    .go_insta {
+        top: 33px;
+        right: 65px;
+    }
+
     #gnb .depth_1 {
         width: 14%;
     }

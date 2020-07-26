@@ -1,0 +1,154 @@
+.visual {
+    width: 100%;
+    height: 500px;
+    background-color: #aaa;
+    background: url(../img/about_1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*main_txt*/
+.main_txt {
+    width: 100%;
+    /* background: rgb(154, 183, 197, 0.5); */
+    text-align: center;
+    padding: 50px 0;
+    margin: 50px 0;
+    line-height: 2em;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.main_txt span {
+    display: block;
+}
+
+.main_txt .font_box {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #0b547a;
+    margin: 0 auto;
+}
+
+.sub_tit {
+    margin: 50px 0;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.main_txt>.line {
+    width: 2px;
+    height: 100px;
+    margin: 30px auto;
+    background-color: #333;
+}
+
+.main_txt>.desc {
+    font-size: 26px;
+    line-height: 1.5em;
+}
+
+.sub_desc {
+    font-size: 28px;
+}
+
+/*go page*/
+
+
+.about_box {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about_box>li {
+    width: 48%;
+    margin: 50px auto 100px;
+    height: 500px;
+}
+
+.about_box>.c_txt {
+    background-color: #fafafa;
+}
+
+.about_box>.c_txt>.c_txt_inner {
+    /* background-color: #ccc; */
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    margin-top: 3.5%;
+}
+
+.c_txt_inner span {
+    display: block;
+}
+
+.c_pic img {
+    width: 100%;
+}
+
+.c_tit {
+    font-size: 22px;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.c_sub_tit {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.c_txt_inner li {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+
+.contact_wrap {
+    width: 80%;
+    height: 500px;
+    margin: 50px auto;
+    background-color: salmon;
+    background: url(../img/about_2.jpg) no-repeat;
+    background-size: cover;
+}
+
+.contact_wrap>div {
+    position: relative;
+    float: right;
+    top: 100px;
+    right: 30px;
+    width: 30%;
+}
+
+.contact_wrap ul {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact_wrap ul li {
+    padding: 20px 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.contact_wrap .font_box {
+    border-color: #333;
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px 0;
+    margin-left: 5%;
+    font-size: 22px;
+}
+
+.contact_wrap .font_box:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+@media screen and (max-width: 1024px) {}
