@@ -457,4 +457,20 @@ footer {
         padding: 0;
         font-size: 14px;
     }
+
+    footer {
+        width: 100%;
+        padding: 20px 0;
+        background: #f1f1f1;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .copyright_txt {
+        width: 98%;
+        margin: 0 auto;
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 2em;
+    }
 }
