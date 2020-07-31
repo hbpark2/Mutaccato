@@ -151,4 +151,88 @@
     color: #fff;
 }
 
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1024px) {
+    .visual {
+        width: 100%;
+        height: 300px;
+        background-color: #aaa;
+        background: url(../img/about_1.jpg) no-repeat;
+        background-size: 100%;
+        background-position: center;
+    }
+
+    .main_txt {
+        font-size: 22px;
+        margin: 0;
+    }
+
+    .main_txt span {
+        display: block;
+    }
+
+    .main_txt .font_box {
+        width: 200px;
+        padding: 10px;
+    }
+
+    .main_txt>.line {
+        /* display: none */
+        height: 30px;
+    }
+
+    .sub_tit {
+        margin: 25px 0;
+
+        font-size: 18px;
+    }
+
+    .sub_desc {
+        font-size: 14px;
+    }
+
+    .main_txt>.desc {
+        font-size: 14px;
+    }
+
+    .about_box {
+        width: 100%;
+        display: block;
+    }
+
+    .about_box>li {
+        width: 100%;
+        margin: 50px auto;
+        height: auto;
+    }
+
+    .about_box>.c_txt {
+        background-color: #fafafa;
+        margin-top: 0;
+    }
+
+    .about_box>.c_txt>.c_txt_inner {
+        /* background-color: #ccc; */
+        width: 90%;
+        height: 90%;
+        margin: 3.5% auto;
+        padding-bottom: 3.5%;
+    }
+
+    .c_tit {
+        font-size: 18px;
+
+    }
+
+    .c_sub_tit {
+        font-size: 14px;
+
+    }
+
+    .c_txt_inner li {
+        font-size: 14px;
+    }
+
+    .contact_wrap {
+        background-size: 100%;
+    }
+}

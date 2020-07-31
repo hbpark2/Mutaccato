@@ -276,6 +276,7 @@
 
     .work_section>ul {
         width: 100%;
+        display: block;
     }
 
     /***********************/
