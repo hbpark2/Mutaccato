@@ -174,7 +174,13 @@ li.b_thum_box>a>i.fas {
 }
 
 
+ul.b_thum_wrap>.thum_txt>span {
+    font-weight: 500;
+}
 
+ul.b_thum_wrap>.thum_txt>span>span {
+    font-weight: 600;
+}
 
 
 
@@ -182,13 +188,23 @@ li.b_thum_box>a>i.fas {
 
 
 @media screen and (max-width: 1024px) {
-    ul.thum_wrap {
-        width: 98%;
+    ul.b_thum_wrap {
+        margin: 50px auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
     }
 
-    li.thum_box {
-        width: 47%;
-        height: 300px;
-        margin: 5% 1.5%;
+    ul.b_thum_wrap>.thum_txt>span {
+        font-size: 16px;
     }
+}
+
+@media screen and (max-width: 640px) {
+
+    ul.b_thum_wrap>.thum_txt>span {
+        font-size: 12px;
+    }
+
+
 }

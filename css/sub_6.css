@@ -193,13 +193,10 @@ li.b_thum_box>a>i.fas {
 
 
 @media screen and (max-width: 1024px) {
-    ul.thum_wrap {
-        width: 98%;
-    }
 
-    li.thum_box {
-        width: 47%;
-        height: 300px;
-        margin: 5% 1.5%;
+    li.b_thum_box {
+        float: none;
+        width: auto;
+        margin: 20px auto;
     }
 }

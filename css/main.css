@@ -167,6 +167,11 @@
     display: block;
 }
 
+.c_pic {
+    display: flex;
+    align-items: center;
+}
+
 .c_pic img {
     width: 100%;
 }

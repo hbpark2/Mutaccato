@@ -32,6 +32,21 @@ body {
     color: #333;
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+body::-webkit-scrollbar-thumb {
+    background-color: #D9CBBA;
+    height: 20px;
+}
+
+
+body::-webkit-scrollbar-track {
+    background-color: #fafafa;
+}
+
 .font_box {
     text-align: center;
     padding: 3px;
@@ -102,7 +117,7 @@ h1 img {
 .go_insta {
     position: absolute;
     top: 45px;
-    right: 250px;
+    right: 2%;
     display: block;
     width: 40px;
     height: 40px;
@@ -124,7 +139,8 @@ nav .menu_btn {
 
 .depth_1 {
     float: left;
-    width: 180px;
+    /* width: 180px; */
+    width: 13%;
 }
 
 .depth_1 a {
@@ -304,8 +320,12 @@ footer {
 /* 일반 pc */
 @media screen and (max-width:1280px) {
     .go_insta {
-        top: 33px;
-        right: 65px;
+        top: 50px;
+        right: -10px;
+    }
+
+    .go_insta img {
+        width: 80%;
     }
 
     #gnb .depth_1 {
@@ -325,11 +345,22 @@ footer {
     }
 }
 
-/* 일반 pc */
+/* 모바일 ~ 태블릿 pc */
 @media screen and (max-width:1024px) {
+    .go_insta {
+        top: 33px;
+        right: 65px;
+    }
+
+    .go_insta img {
+        width: 100%;
+    }
+
     header {
+        width: 100%;
         height: 100px;
         overflow: visible;
+        margin-left: 0;
     }
 
     h1 img {
