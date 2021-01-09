@@ -6,7 +6,6 @@
 
 // showbox.style.height = window.screen.height + 'px'
 
-
 // for (let i = 0; i < thumBox.length; i++) {
 //     thumBox[i].addEventListener('click', (e) => {
 //         e.preventDefault();
@@ -16,14 +15,8 @@
 //         console.log(detailImg[i])
 //         detailImg[i].style.display = 'block'
 
-
 //     })
 // }
-
-
-
-
-
 
 // closeBtn.addEventListener('click', () => {
 //     showbox.style.zIndex = -5;
@@ -41,18 +34,16 @@
 //     })
 // })
 
-
-
-var $lg = $('.b_thum_wrap').lightGallery({
-    selector: '.item',
-    zoom: true,
-    scale: 1,
-    autoplay: false,
-    autoplayControls: false,
-    actualSize: true,
-    thumbnail: false,
-    share: false,
-    fullScreen: false,
-    download: false,
-    subHtmlSelectorRelative: true,
+var $lg = $(".b_thum_wrap").lightGallery({
+	selector: ".item",
+	zoom: true,
+	scale: 1,
+	autoplay: false,
+	autoplayControls: false,
+	actualSize: true,
+	thumbnail: false,
+	share: false,
+	fullScreen: false,
+	download: false,
+	subHtmlSelectorRelative: true,
 });
